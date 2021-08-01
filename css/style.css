@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* forum-regular - latin */
+@font-face {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/forum-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/forum-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v27-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v27-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v27-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v27-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v27-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v27-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v27-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v27-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v27-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v27-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v27-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v27-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v27-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v27-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v27-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v27-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v27-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v27-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v27-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v27-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+
+  /* roboto-slab-200 - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/roboto-slab-v13-latin-200.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-slab-v13-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-slab-v13-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-slab-v13-latin-200.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-slab-v13-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-slab-v13-latin-200.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+  }
+
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+      box-sizing: inherit;
+  }
+
+  body {
+    max-width: 1920px;
+  }
+
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .header {
+      background-color: black;
+  }
+
+  .header__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-top: 74px;
+      padding-bottom: 76px;
+  }
+
+  .header__list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .header__item {
+      margin-right: 76px;
+  }
+
+  .header__item:last-child {
+      margin-right: 0;
+  }
+
+  .header__link {
+    Font-family: Roboto;
+    Font-style: Thin;
+    Font-size: 22px;
+    Line-height: 50px;
+    Line-height: 194%;
+    text-align: Left;
+    vertical-align: Top;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 100;
+    text-decoration: none;
+  }
+
+  .header__link:hover, .header__link:focus, .header__link:active {
+    color: #9d8665;
+  }
+
+  .welcome__content {
+    background-color: black;
+    position: relative;
+    top:-620px;
+    z-index: 1;
+  }
+
+  
+
+  .background__louvre {
+    height: 750px;
+    background-image: url(../img/louvre.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: right top;
+    
+    z-index: 0;
+    
+    
+  }
+
+  .welcome__title {
+    color: white;
+    Font-family: Forum;
+    Font-style: Regular;
+    Font-size: 80px;
+    Line-height: 10px;
+    /*Line-height: 102%;*/
+    text-align: Left;
+    Vertical-align: Top;
+    Letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    
+  }
+
+  .welcome__right {
+    float: right;
+    background-color: black;
+  }
+
+  .welcome {
+    max-height: 750px;
+  }
+
+  .welcome__louvre {
+    Font-family: Forum;
+    Font-style: Regular;
+    Font-size: 80px;
+    Line-height: 90px;
+    Line-height: 102%;
+    text-align: Left;
+    vertical-align: Top;
+    Letter-spacing: 5px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    /*margin-top: 114px;*/
+    padding-bottom: 25px;
+    
+  }
+
+  .welcome__content {
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    
+  }
+
+  .welcome__text {
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 28px;
+    Line-height: 33px;
+    Line-height: 100%;
+    text-align: Left;
+    vertical-align: Top;
+    Letter-spacing: 2px;
+    font-weight: 300;
+    color: white;
+    margin-top: 7px;
+    
+  }
+  
+  .welcome__btn {
+    background: #710707;
+    padding: 24px 115px 25px 115px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 65px;
+    border: none;
+    outline: none;
+    
+  }
+
+  .welcome__btn:hover {
+    color: #9d8665;
+  }
+
+  .visiting__cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    margin-top: 75px;
+    
+  }
+
+  .visiting__card  {
+    height: 422px;
+    
+    width: 440px;
+    padding-top: 15px;
+  }
+
+  .visiting {
+    height: 1115px;
+  }
+
+  .visiting__title {
+    margin-top: 75px;
+    border-bottom: #710707 solid 3px;
+    padding-bottom: 10px;
+  }
+
+ /* .visiting__content {
+
+    margin-bottom: 75px;
+  }*/
+
+  .visiting__title__louvre {
+    padding-bottom: 25px;
+    Font-family: Forum;
+    Font-style: Regular;
+    Font-size: 80px;
+    Line-height: 90px;
+    Line-height: 102%;
+    text-align: Left;
+    Vertical-align: Top;
+    Letter-spacing: 5px;
+    font-weight: 400;
+    color: #9D8665;
+    text-transform: uppercase;
+  }
+
+  .title__card {
+    Font-family: Forum;
+    Font-style: Regular;
+    Font-size: 32px;
+    Line-height: 35px;
+    Line-height: 100%;
+    text-align: Left;
+    Vertical-align: Top;
+    Letter-spacing: 5px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 9px;
+    /*border-bottom: #710707 solid 2px;
+    max-width: 300px;*/
+    
+    
+  }
+
+  .red__line {
+
+    border-bottom: #710707 solid 2px;
+    max-width: 300px;
+    padding-bottom: 10px;
+  }
+
+  .red__line__cardss {
+    border-bottom: #710707 solid 2px;
+    max-width: 300px;
+  }
+
+  .card__link {
+    text-decoration: none;
+  }
+
+  
+
+  /*.red__line__cards {
+    position: absolute;
+    border-bottom: #710707 solid 2px;
+    width: 300px;
+    height: 2px;
+    bottom: -620px;
+
+ }*/
+
+  .High__card {
+    Font-family: Roboto;
+    Font-style: Thin;
+    Font-size: 22px;
+    Line-height: 26px;
+    Line-height: 100%;
+    text-Align: Left;
+    vertical-align: Top;
+    color: black;
+    margin-top: 20px;
+  }
+
+  .Low__card {
+    Font-family: Roboto;
+    Font-style: Thin;
+    Font-size: 18px;
+    Line-height: 21px;
+    Line-height: 100%;
+    text-Align: Left;
+    vertical-align: Top;
+    color: black;
+  }
+
+  /*.red__line__card__low {
+    position: absolute;
+    border-bottom: #710707 solid 2px;
+    width: 300px;
+    height: 2px;
+    bottom: -1100px;
+  }*/
+
+  .explore {
+    max-height: 865px;
+  }
+
+  .background__explore {
+    background-color: black;
+    height: 865px;
+  }
+
+  .explore__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*.explore__foto {
+    flex: 1 1 auto;
+  }*/
+
+  .explore__title__top {
+    Font-family: Forum;
+    Font-style: Regular;
+    Font-size: 80px;
+    Line-height: 90px;
+    Line-height: 102%;
+    text-align: Left;
+    Vertical-align: Top;
+    Letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: #710707 solid 2px;
+    width: 660px;
+    padding-bottom: 25px;
+  }
+
+  .explore__text {
+    color: white;
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 22px;
+    Line-height: 38.5px;
+    Line-height: 149%;
+    text-align: Left;
+    Vertical-align: Top;
+    padding-top: 75px;
+  }
+
+  .explore__content {
+    padding-top: 75px;
+    margin-top: 75px;
+  }
+
+  .explore__text__middle {
+    padding-top: 45px;
+  }
+
+  .explore__text__bottom {
+    padding-top: 45px;
+  }
+
+  .yellow__veil {
+    color: #CAAA7D;
+    text-decoration: none;
+  }
+
+  .video__text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .video__text__title {
+    Font-family: Forum;
+    Font-style: Regular;
+    Font-size: 80px;
+    Line-height: 90px;
+    Line-height: 102%;
+    text-Align: Left;
+    vertical-align: Top;
+    Letter-spacing: 5px;
+    color: #9d8665;
+    text-transform: uppercase;
+  }
+
+  .video__text__content {
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 22px;
+    Line-height: 38.5px;
+    Line-height: 149%;
+    text-Align: Left;
+    vertical-align: Center;
+    color: black;
+    padding-top: 5px;
+  }
+
+  .video__content {
+    margin-top: 30px;
+    margin-bottom: 75px;
+  }
+
+  .background__tickets {
+    background-color: black;
+    height: 893px;
+    margin-bottom: 75px;
+  }
+
+  .tickets__type {
+    color: white;
+    width: 270px;
+    height: 262px;
+    
+  }
+
+  .tickets__content__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tickets__title {
+    Font-family: Forum;
+    Font-style: Regular;
+    Font-size: 80px;
+    Line-height: 90px;
+    Line-height: 102%;
+    text-Align: Left;
+    Vertical-align: Top;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: #710707 solid 3px;
+    padding-bottom: 25px;
+    margin-bottom: 75px;
+    
+  }
+
+  .tickets__content {
+    height: 743px;
+    padding-top: 75px;
+   
+  }
+
+  .radio__title {
+    Font-family: Roboto;
+    Font-style: Bold;
+    Font-size: 28px;
+    Line-height: 33px;
+    Line-height: 100%;
+    text-align: Left;
+    Vertical-align: Top;
+    margin-bottom: 60px;
+  }
+
+  .radio__btn {
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 22px;
+    Line-height: 26px;
+    Line-height: 100%;
+    text-Align: Left;
+    Vertical-align: Top;
+  }
+
+  .btn1, .btn2 {
+    margin-bottom: 50px;
+  }
+
+  .btn__margin {
+    padding-left: 23px;
+  }
+
+  .tickets__among {
+    width: 175px;
+    height: 442px;
+    background-color: black;
+    margin-left: 105px;
+  }
+
+  .contacts__title__text {
+    Font-family: Forum;
+    Font-style: Regular;
+    Font-size: 80px;
+    Line-height: 90px;
+    Line-height: 102%;
+    text-Align: Left;
+    Vertical-align: Top;
+    Letter-spacing: 5px;
+    color: #9d8665;
+    border-bottom: #710707 solid 3px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    
+  }
+
+  /*.contacts__map {
+    width: 960px;
+    height: 620px;
+  }*/
+
+  .contacts__content__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+  }
+
+  .contacts__text__title {
+    Font-family: Roboto;
+    Font-style: Medium;
+    Font-size: 28px;
+    Line-height: 33px;
+    Line-height: 100%;
+    text-Align: Left;
+    vertical-align: Top;
+    color: black;
+  }
+
+  .contacts__text__text {
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 22px;
+    Line-height: 26px;
+    Line-height: 100%;
+    text-Align: Left;
+    Vertical-align: Top;
+    color: black;
+  }
+
+  .a__contacts {
+    text-decoration: none;
+    color: black;
+  }
+
+  .contacts__title {
+    margin-bottom: 75px;
+  }
+
+  .address {
+    margin-top: 36px;
+  }
+
+  .phone {
+    margin-top: 20px;
+  }
+
+  .email {
+    margin-top: 20px;
+  }
+
+  .background__footer {
+    height: 300px;
+    background-color: black;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 195px;
+    height: 50px;
+  }
+
+  .footer__text__logo {
+    Font-family: Forum;
+    Font-style: Regular;
+    Font-size: 28px;
+    Line-height: 50px;
+    Line-height: 162%;
+    text-Align: Left;
+    Vertical-align: Top;
+    Letter-spacing: 5px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    
+  }
+
+  .footer__nav  {
+    /*width: 366px;
+    height: 150px;*/
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .footer__link {
+    text-decoration: none;
+    font-weight: 200;
+    Font-family: Roboto;
+    Font-style: Thin;
+    Font-size: 22px;
+    Line-height: 50px;
+    Line-height: 194%;
+    text-Align: Left;
+    Vertical-align: Top;
+    Letter-spacing: 2px;
+    color: white;
+  }
+
+  .footer__list {
+    
+    column-count: 2;
+  }
+
+  
+
+  .footer__list__social {
+    display: flex;
+    justify-content: space-between;
+    width: 336px;
+    height: 48px;
+  }
+
+  .first__column {
+    padding-right: 153px;
+  }
+
+  .footer__list__social {
+    padding-top: 70px;
+  }
+
+  .footer__link:hover {
+    color: #9d8665;
+  }
+
+  .number {
+    all: unset;
+    width: 3em;
+    text-align: center;
+  }
+
+  .tickets__btn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    
+  }
+
+  .input__btn {
+    color: black;
+  }
+
+  .tickets__high, .tickets__low {
+    border: white solid 2px;
+  }
+
+  .qwe {
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin-left: 35px;
+    
+  }
+
+  .among, .total {
+    Font-family: Roboto;
+    Font-style: Bold;
+    Font-size: 28px;
+    Line-height: 33px;
+    Line-height: 100%;
+    text-align: right;
+    Vertical-align: Top;
+    margin-bottom: 50px;
+    color: white;
+    
+  }
+
+  .bacis, .senior {
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 22px;
+    Line-height: 26px;
+    Line-height: 100%;
+    text-Align: Left;
+    Vertical-align: Top;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 14px;
+  }
+
+  .tickets__high, .tickets__low {
+    margin-bottom: 35px;
+  }
+
+  .buynow {
+    width: 175px;
+    height: 50px;
+  }
+
+  html {
+    zoom: 80%;
+  }
+
+
+
+  
+ 
+
+ 
